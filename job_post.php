@@ -16,10 +16,9 @@
 	<h1>Jobportal</h1>
 
 	<ul class="nav nav-pills ">
-  		<li role="presentation" class="active"><a href="#">Home</a></li>
-  		<li role="presentation"><a href="#search_module">Search Jobs</a></li>
+  		<li role="presentation" ><a href="index.php">Home</a></li>
   		<li role="presentation"><a href="#">Joblist</a></li>
-  		<li role="presentation"><a href="job_post.php">Job Post</a></li>
+  		<li role="presentation" class="active"><a href="#">Job Post</a></li>
   		<li role="presentation"><a href="#">ContactUs</a></li>
   		<li role="presentation"><a href="#">AboutUs</a></li>
 	</ul>
@@ -41,7 +40,7 @@ include 'slider.php';
 <!--Search Module -->
 <div class="container" >
 <h1>Welcome to Jobportal</h1>
-<?php include 'search.php'; ?>
+<?php include 'company_post.php'; ?>
 </div>
 
 <!--Footer-->
