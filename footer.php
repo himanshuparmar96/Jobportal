@@ -13,8 +13,8 @@
       <div class="col-lg-4"><label>About Company</label>
       <div class="row">
       	<div class="col-lg-4">
-      	<a href="#">AboutUS</a>
-      	<a href="#">ContactUS</a>
+      	<a href="about.html">AboutUS</a>
+      	<a href="contactus.php">ContactUS</a>
       	</div>
       	</div>
       </div>
@@ -22,11 +22,11 @@
       <div class="col-lg-4"><label>For Employers</label>
 		<div class="row">
 		<div class="col-lg-4">
-		<a href="#">Home</a><br>
+		<a href="index.php">Home</a><br>
 		<a href="login.php">Login</a>
-      	<a href="#">Registration</a>
+      	<a href="register.html">Registration</a>
 		<a href="job_post.php">Job Post</a>
-		<a href="#">Advertise With US</a>
+		<a href="contactus.php">Advertise With US</a>
 		</div>
 		</div>
       </div>
@@ -34,9 +34,9 @@
 
       	<div class="row">
 		<div class="col-lg-4">
-		<a href="#">Home</a><br>
+		<a href="index.php">Home</a><br>
 		<a href="login.php">Login</a>
-      	<a href="#">Registration</a>
+      	<a href="registration.php">Registration</a>
 		<a href="#search_module" onfocus="search_by_category">Search Job</a>
 		<a href="#">Latest Jobs</a>
 		</div>

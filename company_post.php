@@ -9,6 +9,11 @@
 <form action="#" method="post">
 	<h1>Post Your Job Here</h1>
 	<div class="form-group">
+	<label>Company Name</label>
+	<input type="text" name="company_name" class="form-control">
+
+	</div>
+	<div class="form-group">
 	<label class="fieldRequired">JobTitle</label>
 	<input type="text" name="job_title" class="form-control" required>
 	</div>		
@@ -35,6 +40,21 @@
 			<input type="text" name="skills" class="form-control">
 	</div>
 
+	<div class="form-group">
+		<label>Experience</label>
+		<select class="form-control">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+			</select>
+	</div>
 	<div class="form-group">
 		<label>Salary</label>
 		<input type="number" name="salary" class="form-control" required>

@@ -19,8 +19,8 @@
   		<li role="presentation" ><a href="index.php">Home</a></li>
   		<li role="presentation"><a href="#">Joblist</a></li>
   		<li role="presentation" class="active"><a href="#">Job Post</a></li>
-  		<li role="presentation"><a href="#">ContactUs</a></li>
-  		<li role="presentation"><a href="#">AboutUs</a></li>
+  		<li role="presentation"><a href="contactus.php">ContactUs</a></li>
+  		<li role="presentation"><a href="aboutus.php">AboutUs</a></li>
 	</ul>
 
 	</div>
