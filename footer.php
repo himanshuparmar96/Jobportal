@@ -24,7 +24,7 @@
 		<div class="col-lg-4">
 		<a href="index.php">Home</a><br>
 		<a href="login.php">Login</a>
-      	<a href="register.html">Registration</a>
+      	<a href="registration_user.php">Registration</a>
 		<a href="job_post.php">Job Post</a>
 		<a href="contactus.php">Advertise With US</a>
 		</div>
@@ -36,7 +36,7 @@
 		<div class="col-lg-4">
 		<a href="index.php">Home</a><br>
 		<a href="login.php">Login</a>
-      	<a href="registration.php">Registration</a>
+      	<a href="registration_user.php">Registration</a>
 		<a href="#search_module" onfocus="search_by_category">Search Job</a>
 		<a href="#">Latest Jobs</a>
 		</div>

@@ -26,7 +26,7 @@
 	</div>
 
 	<span class="col-lg-2" style="margin-top: 50px;padding:15px;"><a href="login.php">Login |</a>
-	<a href="#">Registration</a></span>
+	<a href="registration_user.php">Registration</a></span>
 </div>
 
 </div>
@@ -39,7 +39,7 @@ include 'slider.php';
 
 <!--Search Module -->
 <div class="container" >
-<h1>Welcome to Jobportal</h1>
+<h1>Job Post</h1>
 <?php include 'company_post.php'; ?>
 </div>
 

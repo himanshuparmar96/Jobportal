@@ -25,7 +25,7 @@
 	</div>
 
 	<span class="col-lg-2" style="margin-top: 50px;padding:15px;"><a href="login.php">Login |</a>
-	<a href="#">Registration</a></span>
+	<a href="registration_user.php">Registration</a></span>
 </div>
 
 </div>

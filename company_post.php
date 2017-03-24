@@ -5,14 +5,13 @@
 	<link rel="stylesheet"  href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
 </head>
 <body>
-<div class="container" style="width: 500px;border: 1px solid;">
+<div class="container" style="width: 100%;border: 1px solid;background-color: #eee;">
+<div class="container" style="width: 700px; background-color: white;border-radius: 8px;margin-top: 30px;margin-bottom: 30px;">
 <form action="#" method="post">
 	<h1>Post Your Job Here</h1>
-	<div class="form-group">
-	<label>Company Name</label>
-	<input type="text" name="company_name" class="form-control">
 
-	</div>
+	<div class="container" style="width: 600px;">
+
 	<div class="form-group">
 	<label class="fieldRequired">JobTitle</label>
 	<input type="text" name="job_title" class="form-control" required>
@@ -89,7 +88,9 @@
 		
 	</div>
 
+	</div>
 </form>
+</div>
 </div>
 </body>
 </html>

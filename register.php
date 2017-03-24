@@ -1,13 +1,35 @@
 <!DOCTYPE html>
 <head>
-	<title>Create Account</title>
+	<title>Jobseeker Registration</title>
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 	<link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<link href="bootstrap-3.3.7-dist/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
 	<link href="css/templatemo_style.css" rel="stylesheet" type="text/css">	
 </head>
 <body class="templatemo-bg-gray">
-	<h1 class="margin-bottom-15">Create Account</h1>
+
+<?php 
+	if (isset($_POST['submit'])) 
+	{
+	
+	
+		$user=$_POST['user'];
+		
+		if ($user==1) 
+		{
+			echo "jobseeker form";	
+		}
+		else
+		{
+			echo "company form";
+		}
+	
+	}
+	//else{echo "<script>alert('select field');</script>";}
+
+ ?>
+
+	<h1 class="margin-bottom-15">Jobseeker Registration</h1>
 	<div class="container">
 		<div class="col-md-12">			
 			<form class="form-horizontal templatemo-create-account templatemo-container" role="form" action="#" method="post">
@@ -15,23 +37,23 @@
 					<div class="form-group">
 			          <div class="col-md-6">		          	
 			            <label for="first_name" class="control-label">First Name</label>
-			            <input type="text" class="form-control" id="first_name" placeholder="">		            		            		            
+			            <input type="text" class="form-control" id="first_name" placeholder="" required>		            		            		            
 			          </div>  
 			          <div class="col-md-6">		          	
 			            <label for="last_name" class="control-label">Last Name</label>
-			            <input type="text" class="form-control" id="last_name" placeholder="">		            		            		            
+			            <input type="text" class="form-control" id="last_name" placeholder="" required>		            		            		            
 			          </div>             
 			        </div>
 			        <div class="form-group">
 			          <div class="col-md-12">		          	
 			            <label for="username" class="control-label">Email</label>
-			            <input type="email" class="form-control" id="email" placeholder="">		            		            		            
+			            <input type="email" class="form-control" id="email" placeholder="" required>		            		            		            
 			          </div>              
 			        </div>			
 			        <div class="form-group">
 			          <div class="col-md-6">		          	
 			            <label for="username" class="control-label">Username</label>
-			            <input type="text" class="form-control" id="username" placeholder="">		            		            		            
+			            <input type="text" class="form-control" id="username" placeholder="" required>		            		            		            
 			          </div>
 			          <div class="col-md-6 templatemo-radio-group">
 			          	<label class="radio-inline">
@@ -45,11 +67,11 @@
 			        <div class="form-group">
 			          <div class="col-md-6">
 			            <label for="password" class="control-label">Password</label>
-			            <input type="password" class="form-control" id="password" placeholder="">
+			            <input type="password" class="form-control" id="password" placeholder="" required>
 			          </div>
 			          <div class="col-md-6">
 			            <label for="password" class="control-label">Confirm Password</label>
-			            <input type="password" class="form-control" id="password_confirm" placeholder="">
+			            <input type="password" class="form-control" id="password_confirm" placeholder="" required>
 			          </div>
 			        </div>
 			        <!--<div class="form-group">

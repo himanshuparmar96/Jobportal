@@ -3,6 +3,7 @@
 <head>
 	<title>welcome to jobportal</title>
 	<link rel="stylesheet"  href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link rel="stylesheet"  href="web_final/bootstrap-3.3.7-dist/font-awesome-4.7.0/search/font-awesome.min.css">
 	<style type="text/css">
 		.body{background-color: cyan;}
 	</style>
@@ -27,7 +28,7 @@
 	</div>
 
 	<span class="col-lg-2" style="margin-top: 50px;padding:15px;"><a href="login.php">Login |</a>
-	<a href="register.html">Registration</a></span>
+	<a href="registration_user.php">Registration</a></span>
 </div>
 
 </div>

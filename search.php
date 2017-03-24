@@ -3,7 +3,7 @@
 <head>
 	<title>job search</title>
 	<link rel="stylesheet"  href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
-	<!--<link rel="stylesheet"  href="bootstrap-3.3.7-dist/css/font-awesome.min.css">-->
+	<!--<link rel="stylesheet"  href="C:/wamp/www/web_final/bootstrap-3.3.7-dist/font-awesome-4.7.0/search/font-awesome.min.css">-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
