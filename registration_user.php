@@ -17,7 +17,7 @@
 </head>
 <body style="background-color: #eee;">
 <div class="container">
-<form action="register.php" method="post" onsubmit="checkuser()">
+<form action="register.php" method="post" onsubmit="return checkuser();">
 <div class="form-group">
 <div align="center" class="container" style="width: 400px;background-color: white;border-radius: 8px;margin-top: 100px;">
 <h1 class="label-control">Select User</h1>	
@@ -29,7 +29,7 @@
 </select>
 	<div class="form-group">
 	<div style="margin-top: 30px;">
-	<input type="submit" value="Register" class="form-control btn-danger" name="submit">
+	<input type="submit" value="Register" class="form-control btn-info" name="submit">
 	</div>
 	</div>
 </div>
