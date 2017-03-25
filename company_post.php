@@ -3,11 +3,22 @@
 <head>
 	<title>Post Job</title>
 	<link rel="stylesheet"  href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<script type="text/javascript">
+		function msgbox() 
+		{
+			var x=document.getElementByID('msg').value
+			if (x==post job) 
+			{
+				alert("job posted");
+			}
+		}
+
+	</script>
 </head>
 <body>
 <div class="container" style="width: 100%;border: 1px solid;background-color: #eee;">
 <div class="container" style="width: 700px; background-color: white;border-radius: 8px;margin-top: 30px;margin-bottom: 30px;">
-<form action="#" method="post">
+<form action="" method="post" onsubmit="return msgbox();">
 	<h1>Post Your Job Here</h1>
 
 	<div class="container" style="width: 600px;">
@@ -19,13 +30,13 @@
 
 	<div class="form-group">
 		<label>Job Description</label>
-		<textarea rows="10" cols="20" class="form-control" required></textarea>
+		<textarea rows="10" cols="20" name="job_decription" class="form-control" required></textarea>
 	</div>
 
 	<div class="form-group">
 		<label>Job Location</label>
 		
-			<select class="form-control" required>
+			<select class="form-control" required name="location">
 			<option value="Ahmedabad">Ahmedabad</option>
 			<option value="Anand">Anand</option>
 			<option value="Nadiyad">Nadiyad</option>
@@ -41,7 +52,7 @@
 
 	<div class="form-group">
 		<label>Experience</label>
-		<select class="form-control">
+		<select class="form-control" name="experience">
 			<option value="1">1</option>
 			<option value="2">2</option>
 			<option value="3">3</option>
@@ -61,7 +72,7 @@
 
 	<div class="form-group" required>
 		<label>Qualification/ Eligibility:</label>
-		<select class="form-control">
+		<select class="form-control" name="qualification">
 			<option value="BE">BE</option>
 			<option value="MCA">MCA</option>
 			<option value="BCA">BCA</option>
@@ -74,7 +85,7 @@
 
 	<div>
 		<label>Last Date of Vacancies</label>
-		<input type="Date" name="lastdate_vacancy" class="form-control">
+		<input type="Date" name="last_date_of_vacancy" class="form-control">
 	</div>
 
 	<div class="form-group">
@@ -84,7 +95,7 @@
 	</div>
 
 	<div class="form-group">
-		<input type="submit" value="Post Job" class="form-control btn-danger" name="submit">
+		<input type="submit" value="Post Job" class="form-control btn-danger" name="submit" id="msg">
 		
 	</div>
 
@@ -94,3 +105,32 @@
 </div>
 </body>
 </html>
+
+<?php 
+include 'conn.php';
+if (isset($_POST['submit'])) 
+{
+	$job_title=$_POST['job_title'];	
+	$job_decription=$_POST['job_decription'];
+	$location=$_POST['location'];
+	$skills=$_POST['skills'];
+	$experience=$_POST['experience'];
+	$salary=$_POST['salary'];
+	$qualification=$_POST['qualification'];
+	$last_date_of_vacancy=$_POST['last_date_of_vacancy'];
+	$vacancy=$_POST['vacancy'];
+}
+$query="insert into post values('','".$job_title."','".$job_decription."','".$location."','".$skills."','".$experience."','".$salary."','".$qualification."','".$last_date_of_vacancy."','".$vacancy."')";
+if (mysql_query($query)==true) 
+{
+	echo "";
+	
+}
+else{
+	echo mysql_error();
+	return false;
+}
+
+
+
+ ?>

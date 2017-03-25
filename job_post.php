@@ -17,7 +17,7 @@
 
 	<ul class="nav nav-pills ">
   		<li role="presentation" ><a href="index.php">Home</a></li>
-  		<li role="presentation"><a href="#">Joblist</a></li>
+  		<li role="presentation"><a href="job_list.php">Joblist</a></li>
   		<li role="presentation" class="active"><a href="#">Job Post</a></li>
   		<li role="presentation"><a href="contactus.php">ContactUs</a></li>
   		<li role="presentation"><a href="aboutus.php">AboutUs</a></li>
